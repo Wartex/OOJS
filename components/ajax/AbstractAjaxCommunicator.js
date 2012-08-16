@@ -1,0 +1,3 @@
+var AbstractAjaxCommunicator = Class.extend({
+    
+});
