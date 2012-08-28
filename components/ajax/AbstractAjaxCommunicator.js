@@ -1,13 +1,13 @@
 var AbstractAjaxCommunicator = Class.extend({
     url: null,
     method: null,
+    _lastResult: null,
     
-    get: function() {
-        throw new AbstractMethodException('get is an abstract method. implement it');
+    fetch: function() {
+        throw new AbstractMethodException('fetch is an abstract method. implement it');
     },
     
-    post: function() {
-       
-    }  
-    
+    getResult: function() {
+        return this._lastResult;
+    }
 });
