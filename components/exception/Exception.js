@@ -30,6 +30,12 @@ var NotImplementedException = Exception.extend({
     }
 });
 
+var AbstractMethodException = Exception.extend({
+    getMessage: function() {
+        return new String('AbstractMethod: ').concat(this._super());
+    }
+});
+
 var TypeMismatchException = Exception.extend({
     getMessage: function() {
         return new String('TypeMismatch: ').concat(this._super());

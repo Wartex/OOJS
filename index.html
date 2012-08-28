@@ -2,16 +2,15 @@
 <html>
 <head>
 <title></title>
-<meta charset="utf8"/>
-<meta name="" content="">
-<script src="simpleinheritance.js"></script>
-<script src="dataStructures.js"></script>
-<script src="exception.js"></script>
+<script src="extensions/simpleinheritance.js"></script>
+<script src="exception/Exception.js"></script>
+<script src="exception/ExceptionStack.js"></script>
+<script src="models/AbstractModel.js"></script>
 
 <script>
 
 try {
-	throw new Exception('Welcome in Exception world', 200);
+
 } catch(e) {
 	document.writeln(e);
 	document.writeln(e.getStack());
