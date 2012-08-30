@@ -4,7 +4,7 @@ var Poll = AbstractModel.extend({
    _started: false,
    
    init: function(ajaxCommunactor) {
-       if (!(ajaxCommunactor instanceof AbstractAjaxCommunactor)) {
+       if (!(ajaxCommunactor instanceof AbstractAjaxCommunicator)) {
            throw new TypeMismatchException('ajaxCommunactor should be an instanceof AbstractAjaxCommunactor');
        }
        this._ajaxCommunactor = ajaxCommunactor;

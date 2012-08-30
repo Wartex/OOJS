@@ -14,6 +14,6 @@ var AbstractExceptionHandler = Class.extend({
     },
 	
     draw: function() {
-        throw new NotImplementedException('draw should be implemented', 500);
+        throw new AbstractMethodException('draw should be implemented', 500);
     }
 });

@@ -1,0 +1,1 @@
+var EventListener = AbstractModel({});

@@ -24,12 +24,6 @@ var Exception = Class.extend({
     }
 });
 
-var NotImplementedException = Exception.extend({
-    getMessage: function() {
-        return new String('NotImplemented: ').concat(this._super());
-    }
-});
-
 var AbstractMethodException = Exception.extend({
     getMessage: function() {
         return new String('AbstractMethod: ').concat(this._super());

@@ -4,7 +4,7 @@ var Enumeration = Class.extend({
 
     init: function(iteratableObject) {
         if (!iteratableObject instanceof Iteratable) {
-            throw new Exception('Value must be an instance of Iteratable');
+            throw new TypeMismatchException('Value must be an instance of Iteratable');
         }
         this._current = 0;
         this._elements = iteratableObject.toArray().clone();
